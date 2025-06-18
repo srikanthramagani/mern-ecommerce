@@ -1,56 +1,128 @@
-.hero{
-    height:100vh;
-    background: linear-gradient(180deg,#e87ca0,#e1ffea22 60%);
+.hero {
+    height: 100vh;
+    background: linear-gradient(180deg, #e87ca0, #e1ffea22 60%);
     display: flex;
 }
-.hero-left{
+
+.hero-left {
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap:20px;
+    gap: 20px;
     padding-left: 180px;
     line-height: 1.1;
-
 }
-.hero-left h2{
+
+.hero-left h2 {
     color: #090900;
     font-size: 20px;
     font-weight: 700;
 }
-.hero-left p{
+
+.hero-left p {
     color: #171711;
     font-size: 40px;
     font-weight: 700;
 }
-.hero-hand-icon{
+
+.hero-hand-icon {
     display: flex;
     align-items: center;
-    gap:10px;
+    gap: 10px;
 }
-.hero-hand-icon img{
-    width:90px;
+
+.hero-hand-icon img {
+    width: 90px;
 }
- .hero-latest-btn{
+
+.hero-latest-btn {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap:15px;
+    gap: 15px;
     width: 310px;
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
     background: #ff4141;
-    color:white;
+    color: white;
     font-size: 22px;
-    font-weight:500;
+    font-weight: 500;
+}
 
- }
- .hero-right img{
-    flex:1;
-    width:500px;
+.hero-right img {
+    flex: 1;
+    width: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
 
- }
+/* ✅ Responsive Enhancements */
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-left {
+        padding-left: 40px;
+        align-items: flex-start;
+    }
+
+    .hero-left h2 {
+        font-size: 18px;
+    }
+
+    .hero-left p {
+        font-size: 32px;
+    }
+
+    .hero-hand-icon img {
+        width: 70px;
+    }
+
+    .hero-latest-btn {
+        width: 260px;
+        height: 60px;
+        font-size: 20px;
+    }
+
+    .hero-right img {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-left {
+        padding-left: 20px;
+        gap: 15px;
+    }
+
+    .hero-left h2 {
+        font-size: 16px;
+    }
+
+    .hero-left p {
+        font-size: 24px;
+    }
+
+    .hero-hand-icon img {
+        width: 60px;
+    }
+
+    .hero-latest-btn {
+        width: 220px;
+        height: 50px;
+        font-size: 18px;
+    }
+
+    .hero-right img {
+        max-width: 300px;
+    }
+}
