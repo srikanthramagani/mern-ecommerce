@@ -1,4 +1,6 @@
+/* ========================== */
 /* Navbar Container */
+/* ========================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -95,9 +97,9 @@
     top: -10px;
     left: -15px;
 }
+
 .link-tag {
     text-decoration: none;
-    
 }
 
 /* ========================== */
@@ -131,7 +133,7 @@
     }
 }
 
-/* For Mobile Devices */
+/* For mobile devices */
 @media (max-width: 480px) {
     .navbar {
         flex-direction: column;
