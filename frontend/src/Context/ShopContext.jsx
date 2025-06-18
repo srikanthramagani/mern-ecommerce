@@ -1,5 +1,9 @@
+
 import React, { createContext, useState } from "react";
 import all_product from "../Components/Assets/all_product";
+
+
+const url="https://mern-ecommerce-backend-i25c.onrender.com"
 
 export const ShopContext = createContext(null);
 
