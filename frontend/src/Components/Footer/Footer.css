@@ -1,58 +1,113 @@
-.Footer{
+.Footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:50px;
-
+    gap: 50px;
 }
-.footer-logo{
+
+.footer-logo {
     display: flex;
     align-items: center;
-    gap:20px;
-
+    gap: 20px;
 }
-.footer-logo p{
-    color:#383838;
+
+.footer-logo p {
+    color: #383838;
     font-size: 46px;
     font-weight: 700;
 }
-.footer-link{
+
+.footer-link {
     display: flex;
     list-style: none;
     gap: 50px;
-    color:#252525;
+    color: #252525;
     font-size: 20px;
 }
-.footer-link li{
+
+.footer-link li {
     cursor: pointer;
 }
-.footer-socials-icon{
+
+.footer-socials-icon {
     display: flex;
     gap: 20px;
 }
-.footer-icons-container{
+
+.footer-icons-container {
     padding: 10px;
     padding-bottom: 6px;
     background: #fbfbfb;
-    border:1px solid #ebebeb;
-
+    border: 1px solid #ebebeb;
 }
-.footer-copyright{
+
+.footer-copyright {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     width: 100%;
     margin-bottom: 30px;
-    color:#1a1a1a;
+    color: #1a1a1a;
     font-size: 20px;
 }
-.footer-copyright hr{
+
+.footer-copyright hr {
     width: 80%;
-    border:none;
+    border: none;
     border-radius: 10px;
-    height:3px;
+    height: 3px;
     background: #c7c7c7;
 }
 
+/* ✅ Responsive Enhancements */
+@media (max-width: 768px) {
+    .footer-logo p {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .footer-link {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    .footer-socials-icon {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-icons-container {
+        padding: 8px;
+    }
+
+    .footer-copyright {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logo p {
+        font-size: 24px;
+    }
+
+    .footer-link {
+        font-size: 16px;
+    }
+
+    .footer-socials-icon {
+        gap: 15px;
+    }
+
+    .footer-copyright {
+        font-size: 14px;
+        gap: 20px;
+    }
+
+    .footer-copyright hr {
+        width: 90%;
+    }
+}
