@@ -16,7 +16,7 @@ const getDefaultCart = () => {
 };
 
 const ShopContextProvider = (props) => {
-    const url="https://mern-ecommerce-backend-i25c.onrender.com"
+    
     const [cartItems, setCartItems] = useState(getDefaultCart());
 
     const addToCart = (itemId) => {
