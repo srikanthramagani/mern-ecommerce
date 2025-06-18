@@ -3,6 +3,8 @@ import p2_img from './product_2.png'
 import p3_img from './product_3.png'
 import p4_img from './product_4.png'
 
+export const url="https://mern-ecommerce-backend-i25c.onrender.com"
+
 let data_product = [
   {
     id:1,
